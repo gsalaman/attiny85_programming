@@ -1,1 +1,2 @@
-# attiny85_programming
+# Programming the ATTINY85
+
