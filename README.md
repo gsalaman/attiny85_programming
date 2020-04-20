@@ -71,3 +71,5 @@ Programmer -> Arduino as ISP
 ```
 
 Then click "burn bootloader".  This should only need to be done once per chip....and now your tiny is ready for sketches!
+
+From this point on, you can download sketches like you normally would....just make sure the board settings match above.
