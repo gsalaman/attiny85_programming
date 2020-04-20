@@ -51,14 +51,14 @@ We now need to setup the UNO as a programmer.  Download the built-in example #11
 
 Next, we need to hook up the tiny to the Uno for programming.  Here are the connections:
 
-| tiny pin # | tiny label | arduino pin |
-|------------|------------|-------------|
-| 1 | reset | 10 |
-| 4 | GND   | GND |
-| 5 | Pin 0 | 11 |
-| 6 | Pin 1 | 12 |
-| 7 | Pin 2 | 13 |
-| 8 | VCC | +5v |
+| tiny physical pin | arduino pin |
+|-----------|-------------|
+| 1 | 10 |
+| 4 | GND |
+| 5 | 11 |
+| 6 | 12 |
+| 7 | 13 |
+| 8 | +5v |
 
 You'll also want a 10 uF cap running across the arduino's reset pin to gnd.
 
