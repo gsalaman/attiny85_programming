@@ -1,4 +1,4 @@
-# Programming the ATTINY85
+# ATTINY85 Guide
 The ATTINY85 is a great processor for when you need a simple, small, arduino-friendly form factor.  
 
 ## Differences from Uno
@@ -38,4 +38,34 @@ In addition, 4 of these pins can be configured as Analog inputs.  Once again, th
  GND  4|    |5  
        +----+
 ```
+## Programming Setup
+The first thing you need to do is to add the tiny board manager package under "preferences".  Paste the following text into the "Additional Boards Managers URLS" field...if you've got a bunch, you'll need to add a comma separator.
+```
+https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+```
 
+Next, install the board manager package by selecting:  "Tools->Board->Boards Manager" and type attiny.  It should find the 
+tiny package by David Mellis.
+
+We now need to setup the UNO as a programmer.  Download the built-in example #11 (ArduinoISP) and program it onto your UNO.
+
+Next, we need to hook up the tiny to the Uno for programming.  Here are the connections:
+
+| tiny pin # | tiny label | arduino pin |
+|------------|------------|-------------|
+| 1 | reset | 10 |
+| 4 | GND   | GND |
+| 5 | Pin 0 | 11 |
+| 6 | Pin 1 | 12 |
+| 7 | Pin 2 | 13 |
+| 8 | VCC | +5v |
+
+You'll also want a 10 uF cap running across the arduino's reset pin to gnd.
+
+Now you need to burn in the bootloader to the tiny.  Change your board settings as follows:
+Board -> ATtiny25/24/85
+Processor -> ATtiny85
+Clock -> Internal 8 MHz
+Programmer -> Arduino as ISP
+
+Then click "burn bootloader".  This should only need to be done once per chip....and now your tiny is ready for sketches!
