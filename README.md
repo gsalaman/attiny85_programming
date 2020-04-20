@@ -63,9 +63,11 @@ Next, we need to hook up the tiny to the Uno for programming.  Here are the conn
 You'll also want a 10 uF cap running across the arduino's reset pin to gnd.
 
 Now you need to burn in the bootloader to the tiny.  Change your board settings as follows:
+```
 Board -> ATtiny25/24/85
 Processor -> ATtiny85
 Clock -> Internal 8 MHz
 Programmer -> Arduino as ISP
+```
 
 Then click "burn bootloader".  This should only need to be done once per chip....and now your tiny is ready for sketches!
