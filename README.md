@@ -1,5 +1,5 @@
 # ATTINY85 Guide
-The ATTINY85 is a great processor for when you need a simple, small, arduino-friendly form factor.  
+The ATTINY85 is a great processor for when you need a simple, small, arduino-friendly form factor.  It'll run on 5v, or a 3.3v coin cell, or a 9v battery...so powering it is a breeze! 
 
 ## Differences from Uno
 There is no "software serial" support, so you don't get the serial monitor.  Because of this, sometimes it's better to develop and debug on an Uno, then transfer your code to the Tiny.
