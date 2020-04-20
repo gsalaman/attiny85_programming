@@ -62,6 +62,9 @@ Next, we need to hook up the tiny to the Uno for programming.  Here are the conn
 
 You'll also want a 10 uF cap running across the arduino's reset pin to gnd.
 
+Here's what that should look like:
+![FVKWJ7TIVHQFYT5 LARGE](https://user-images.githubusercontent.com/43499190/79759375-d61e9a80-82db-11ea-9521-19d1f4404783.jpg)
+
 Now you need to burn in the bootloader to the tiny.  Change your board settings as follows:
 ```
 Board -> ATtiny25/24/85
