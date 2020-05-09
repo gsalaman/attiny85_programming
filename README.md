@@ -22,8 +22,8 @@ All 6 of the other pins can be Digial I/O pins.  But, here's the tricky bit:  th
 ```
         +-\/-+
 (D 5)  1|    |8  VCC
-(D 4)  2|    |7  (D 2)
-(D 3)  3|    |6  (D 1)
+(D 3)  2|    |7  (D 2)
+(D 4)  3|    |6  (D 1)
   GND  4|    |5  (D 0)
         +----+
 ```
