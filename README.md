@@ -42,6 +42,9 @@ In addition, 4 of these pins can be configured as Analog inputs.  Once again, th
 NOTE:  Pin 1 (D5 or A0) is also the reset pin...so don't use it for driving LEDS! It doesn't have enough "umph".
 
 ## Programming Setup
+
+#### Note from 7/14/2024:  I had trouble getting the latest IDE to program successfully.  Use the 1.X version of Arduino for this, and don't skimp on the Cap across gnd and reset.
+
 The first thing you need to do is to add the tiny board manager package under "preferences".  Paste the following text into the "Additional Boards Managers URLS" field...if you've got a bunch, you'll need to add a comma separator.
 ```
 https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
