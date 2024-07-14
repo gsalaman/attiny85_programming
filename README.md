@@ -38,6 +38,9 @@ In addition, 4 of these pins can be configured as Analog inputs.  Once again, th
  GND  4|    |5  
        +----+
 ```
+
+NOTE:  Pin 1 (D5 or A0) is also the reset pin...so don't use it for driving LEDS! It doesn't have enough "umph".
+
 ## Programming Setup
 The first thing you need to do is to add the tiny board manager package under "preferences".  Paste the following text into the "Additional Boards Managers URLS" field...if you've got a bunch, you'll need to add a comma separator.
 ```
