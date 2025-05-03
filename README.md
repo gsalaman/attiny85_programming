@@ -45,6 +45,8 @@ NOTE:  Pin 1 (D5 or A0) is also the reset pin...so don't use it for driving LEDS
 
 #### Note from 7/14/2024:  I had trouble getting the latest IDE to program successfully.  Use the 1.X version of Arduino for this, and don't skimp on the Cap across gnd and reset.
 
+#### Clock note from 5/2/2025:  Was trying PWM, but the clocks/delays weren't matching.  I *thought* I'd burned the bootloader at 8 MHz, but I needed to set the clock in the arduino to 1 MHZ to make "delay" and "delayMicroseconds" come out correctly
+
 The first thing you need to do is to add the tiny board manager package under "preferences".  Paste the following text into the "Additional Boards Managers URLS" field...if you've got a bunch, you'll need to add a comma separator.
 ```
 https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
